@@ -1,0 +1,336 @@
+container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #efeff0;
+}
+.navbar .nav-link {
+  color: #000; 
+  transition: color 0.4s; 
+}
+
+.navbar .nav-link:hover {
+  color: #FF0000; 
+}
+
+.rounded {
+  justify-content: center;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.shirtimage {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.shirt-container {
+  display: flex;
+  max-width: 800px;
+  /* Ajustez la largeur maximale selon vos besoins */
+  margin: 50px auto;
+  /* Ajustez la marge selon vos besoins */
+  width: 100%;
+}
+
+.shirt-details {
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.shirt-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.shirt-details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.shirt-image {
+  flex: 1;
+}
+
+.shirt-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card {
+  width: 50px;
+  /* Définissez la largeur souhaitée pour chaque carte */
+  margin: 100px;
+  /* Ajoutez une marge extérieure pour séparer les cartes */
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.cart-icon {
+  position: fixed;
+  padding: auto;
+  background-color: #efeff0;
+  border: none;
+  color: #efeff0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background-color: #efeff0;
+  padding: 20px;
+  border: 1px solid #efeff0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  width: 300px;
+  /* Ajustez la largeur selon vos besoins */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.popup-item select {
+  width: 50px;
+  padding: 5px;
+}
+
+.popup-close {
+  cursor: pointer;
+  font-size: 30px;
+  color: #555;
+  font-weight: bold;
+}
+
+.popup-close2 {
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+.popup-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ... (votre code actuel) ... */
+
+.search-and-filter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.model-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.model-images img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+
+
+.avis {
+  border: 1px solid #FF0000;
+  width: 70%;
+}
+
+.avis-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.avis-body {
+  padding: 15px;
+}
+
+.avis-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.avis-footer {
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid #efeff0;
+}
+
+.rating {
+  color: #e6d433;
+}
+
+.titre{
+  padding-top: 100px;
+  margin: 30px;
+}
+.texte{
+  padding-top: 10px;
+  margin: 30px;
+}
+
+/* ... (votre code actuel) ... */
+
+
+
+
+.col1{
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 35px;
+  width: 25%;
+  height: 91%;
+  margin-top: 75px;
+  border-right: #fff 5px solid;
+  background-color: #fff;
+}
+
+.col2{
+  float: left;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+  width: 75%;
+  height: 91%;
+  margin-top: 75px;
+  background-color: #fff;
+}
+
+.cardhomme {
+  margin: 15px;
+  width: 50%;
+  height: 50%;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+
+.bonbon {
+  padding: 10px;
+  width: 80%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 280px;
+  height : 240px;
+}
+
+.col7 p {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 120px;
+  margin-bottom: -20px;
+  color:#000000;
+}
+
+
+.col7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-4lzs0t {
+  
+  margin: 15px;
+  padding-left: 35px;
+  display: flex;
+  padding: 20px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+
+.chakra-button {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: var(--chakra-fontWeights-semibold);
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  text-transform: uppercase;
+  height: 50px;
+  min-width: 50px;
+  font-size: var(--chakra-fontSizes-md);
+  padding-inline-start: var(--chakra-space-4);
+  padding-inline-end: var(--chakra-space-4);
+  border: 1px solid currentcolor;
+  border-radius: 2px;
+  margin: 10px;
+  color: #000;
+  background: var(--chakra-colors-transparent);
+}

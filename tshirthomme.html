@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary-bs-red">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index1.html">Acceuil</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nos t-shirts?
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tshirthomme.html">Homme</a></li>
+              <li><a class="dropdown-item" href="tshirtfemme.html">Femme</a></li>
+              <li>
+                <a class="dropdown-item" href="tshirtenfant.html">Enfants</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosbonsplans.html">Nos bons plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quisommenous.html">Qui somme-nous?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="cart-icon" onmouseover="openPopup()"><img src="panier.png" class="bouton2" alt="Panier" /></button>
+            </li>
+              <div class="popup-container" id="popup">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  <div class="popup-content">
+                      <div class="popup-title">Votre Panier</div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>T-shirt</span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>T-shirt </span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                      <div class="popup-item">
+                        <span class="popup-close2" onclick="lol">&times;</span>
+                          <span>T-shirt</span>
+                          <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <!-- Ajoutez d'autres options selon les besoins -->
+                          </select>
+              
+                      </div>
+                     
+                  </div>
+                  <button type="button" class="btn btn-danger">Ajouter au panier</button>
+              </div>
+              
+              <script>
+                  function openPopup() {
+                      document.getElementById('popup').style.display = 'block';
+                  }
+              
+                  function closePopup() {
+                      document.getElementById('popup').style.display = 'none';
+                  }
+              
+                  function proceedToPayment() {
+                      alert('Redirection vers la page de paiement...');
+                      closePopup();
+                  }
+              </script>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="connexion.png" alt="connexion" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+
+
+  <div class="text-center p-3" style="background-color: #efeff0;">
+</div>
+<br></br>
+<section class="">
+
+
+
+
+  <div class="container text-center w-100 d-flex" style="height: 100vh;">
+    <div class="col1">
+      
+    
+  
+    <p>Recherche</p>
+        <form class="form-inline d-flex">
+          <input class="form-control mr-sm-2 w-50" type="search" placeholder="Recherche" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 bg-danger border-0" type="submit">
+            <!--<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search txt-dark" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>-->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2ZM3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0Z"></path></svg>
+          </button>
+        </form>
+        </br>
+        <p>Prix maximum: €<span id="selectedPrice">50</span></p>
+      <div class="price-bar-container bs-red">
+      
+        <input type="range" id="price" name="price" min="0" max="100" step="1" value="50">
+    
+    </div>
+
+    
+
+    <script>
+        const priceInput = document.getElementById('price');
+        const selectedPrice = document.getElementById('selectedPrice');
+
+        priceInput.addEventListener('input', () => {
+            selectedPrice.textContent = priceInput.value;
+        });
+    </script>
+
+<p>Taille</p>
+<input type="checkbox" id="music" name="interest" value="music" />
+    <label for="taille">XS</label><br>
+    <input type="checkbox" id="music" name="interest" value="music" />
+    <label for="taille">S</label><br>
+    <input type="checkbox" id="music" name="interest" value="music" />
+    <label for="taille">M</label><br>
+    <input type="checkbox" id="music" name="interest" value="music" />
+    <label for="taille">L</label><br>
+    <input type="checkbox" id="music" name="interest" value="music" />
+    <label for="taille">XL</label><br>
+    <input type="checkbox" id="music" name="interest" value="music" />
+    <label for="taille">2XL</label>
+    <button class="popup-btn" onclick="">FILTRER</button>
+    </div>
+
+
+
+
+    <div class="col2">
+
+    <p>T-shirts homme</p>
+  </br>
+    <div class="d-flex">
+     
+      <div class="cardhomme">
+        <img src="tshirt.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5></br>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.his card has supporting text below as a natural lead-in to additional content</p>
+        </div> </br>
+        <div class="card-footer">
+          <p>40€ </p>
+        </div>
+      </div>
+  
+      <div class="cardhomme">
+        <img src="tshirt.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5></br>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.his card has supporting text below as a natural lead-in to additional content</p>
+        </div> </br>
+        <div class="card-footer">
+          <p>40€ </p>
+        </div>
+    </div>
+    
+
+    <div class="cardhomme">
+      <img src="tshirt.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5></br>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.his card has supporting text below as a natural lead-in to additional content</p>
+      </div> </br>
+      <div class="card-footer">
+        <p>40€ </p>
+      </div>
+  </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Birbone</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Découvrir</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-body">Nos t-shirts</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Homme</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Femme</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Enfant</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Nos bons plans</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Support</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-body">Aide</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Mentions légales</a>
+            </li>
+            <li>
+              <a href="#!" class="text-body">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #efeff0;">
+      © 2023 Sara Zamoumi Ouared
+
+    </div>
+
+  </footer>
+</body>
+</html>
