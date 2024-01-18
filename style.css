@@ -339,4 +339,10 @@ container-fluid {
     font-size: 24px; 
     font-weight: bold;
   }
+.avis-title {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 
