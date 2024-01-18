@@ -334,3 +334,8 @@ container-fluid {
   color: #000;
   background: var(--chakra-colors-transparent);
 }
+.titre {
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold;
+  }
