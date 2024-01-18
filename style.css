@@ -349,3 +349,8 @@ container-fluid {
 .form-inline button svg {
   fill: #FF0000;
 }
+.custom-red-btn {
+  background-color: #FF0000;
+  border-color: re#FF0000;
+  color: #fff;
+}
