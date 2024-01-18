@@ -344,6 +344,7 @@ container-fluid {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
   }
 .form-inline button svg {
   fill: #FF0000;
